@@ -1,0 +1,67 @@
+[
+    {
+        "title": "Pharmaceutical Research",
+        "description": "We conduct cutting-edge research to develop innovative medicines.",
+        "image": "/assets/images/research-img.webp"
+    },
+    {
+        "title": "Quality Control & Assurance",
+        "description": "Ensuring the highest standards of safety and quality in all our products.",
+        "image": "/assets/images/quality&assurance.jpg"
+    },
+    {
+        "title": "Regulatory Compliance",
+        "description": "Helping clients meet all regulatory requirements and industry standards.",
+        "image": "/assets/images/regulatorycomplaince.webp"
+    },
+    {
+        "title": "Contract Manufacturing",
+        "description": "Providing scalable manufacturing solutions for pharmaceutical companies.",
+        "image": "/assets/images/contract manufacturing.png"
+    },
+    {
+        "title": "Scientifi & Technical Support",
+        "description": "Providing scalable manufacturing solutions for pharmaceutical companies.",
+        "image": "/assets/images/contract manufacturing.png"
+    },
+    {
+        "title": "Data Integrity",
+        "description": "Providing scalable manufacturing solutions for pharmaceutical companies.",
+        "image": "/assets/images/contract manufacturing.png"
+    },
+    {
+        "title": "Remidation",
+        "description": "Providing scalable manufacturing solutions for pharmaceutical companies.",
+        "image": "/assets/images/contract manufacturing.png"
+    },
+    {
+        "title": "QMS",
+        "description": "Providing scalable manufacturing solutions for pharmaceutical companies.",
+        "image": "/assets/images/contract manufacturing.png"
+    },
+    {
+        "title": "Audit Compliance",
+        "description": "Providing scalable manufacturing solutions for pharmaceutical companies.",
+        "image": "/assets/images/contract manufacturing.png"
+    },
+    {
+        "title": "Analytical Services",
+        "description": "Providing scalable manufacturing solutions for pharmaceutical companies.",
+        "image": "/assets/images/contract manufacturing.png"
+    },
+    {
+        "title": "Validation / Qualification",
+        "description": "Providing scalable manufacturing solutions for pharmaceutical companies.",
+        "image": "/assets/images/contract manufacturing.png"
+    },
+    {
+        "title": "Due Diligence Audits",
+        "description": "Providing scalable manufacturing solutions for pharmaceutical companies.",
+        "image": "/assets/images/contract manufacturing.png"
+    },
+    {
+        "title": "Mock Inspections",
+        "description": "Providing scalable manufacturing solutions for pharmaceutical companies.",
+        "image": "/assets/images/contract manufacturing.png"
+    }
+]

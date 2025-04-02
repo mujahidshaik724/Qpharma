@@ -1,0 +1,80 @@
+/* Section Styling */
+.process {
+    text-align: center;
+    padding: 70px 20px;
+    /* background: #f4f4f4; */
+}
+
+/* Section Title */
+.process h2 {
+    font-size: 2.5rem;
+    position: relative;
+    display: inline-block;
+    padding-bottom: 12px;
+}
+
+.process h2::after {
+    content: "";
+    display: block;
+    width: 180px;
+    height: 4px;
+    background:#002244;
+    margin: 12px auto;
+    border-radius: 2px;
+}
+
+/* Steps Container */
+.process-steps {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 40px;
+    flex-wrap: wrap;
+}
+
+/* Individual Step */
+.step {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    width: 350px;
+    height: 280px;
+    text-align: center;
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Step Images */
+.step img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+/* Step Titles */
+.step h3 {
+    font-size: 1.2rem;
+    color: #333;
+}
+
+/* When animation is triggered */
+.step.show {
+    opacity: 1 !important;
+    transform: translateY(0) !important;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .process-steps {
+        flex-direction: column;
+        align-items: center;
+    }
+}

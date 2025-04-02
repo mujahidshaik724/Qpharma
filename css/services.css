@@ -1,0 +1,81 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  line-height: 1.7;
+}
+
+.servicesContainer {
+  height: auto;
+}
+h2 {
+  text-align: center;
+}
+.servicesBanner {
+  padding: 50px 30px;
+  gap: 20px;
+  min-height: 200px;
+  background-color: azure; /* Fallback color */
+  background: linear-gradient(to right, #ffffff, #cfe8fc);
+  background-size: cover; /* Ensures the image covers the entire container */
+  background-position: center; /* Centers the image */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+}
+.content-container {
+  /* max-width: 1000px; */
+  margin: auto;
+  padding: 20px;
+  background: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  /* border-radius: 8px; */
+}
+
+.services-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 20px 0;
+}
+.service-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background: #ecf0f1;
+  padding: 15px;
+  border-radius: 8px;
+  /* text-align: center; */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.service-card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+.service-card h3 {
+  color: #002244;
+}
+
+.btn{
+    display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: end;
+
+}
+.btn button {
+  background: #3498db;
+  border: none;
+  padding: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 120px;
+  
+}
+.btn button a {
+  color: white;
+  text-decoration: none;
+}
+.service-card button:hover {
+  background: #2980b9;
+}

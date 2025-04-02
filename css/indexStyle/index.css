@@ -1,0 +1,256 @@
+/* Hero Section */
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 100px 50px;
+  background: linear-gradient(to right, #ffffff, #cfe8fc);
+}
+.hero-content {
+  width: 50%;
+}
+.hero h1 {
+  font-size: 2.8rem;
+  color: #002244;
+}
+.hero .description {
+  font-size: 16px;
+  line-height: 1.5;
+}
+.hero p {
+  font-size: 1.2rem;
+  color: #444;
+}
+.hero button {
+  margin-top: 10px;
+  padding: 12px 25px;
+  background: #002244;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+  border-radius: 5px;
+}
+.hero button:hover {
+  background: #0056b3;
+  transform: scale(1.05);
+}
+
+.hero .hero-image {
+  width: 45%;
+  animation: fadeIn 1.5s ease-in-out;
+}
+.hero .hero-image img {
+  width: 100%; /* Makes the image span the entire width of the div */
+  height: 100%; /* Makes the image span the height of the div */
+  object-fit: cover; /* Ensures the image fits within the div while maintaining aspect ratio */
+  border-radius: 5px;
+}
+
+/* Fade-in animation */
+.fade-in {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.fade-in.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Product Categories */
+.product-head {
+  padding-bottom: 30px;
+}
+.product-categories {
+  line-height: 1.2;
+  /* text-align: center; */
+  padding: 30px 30px;
+}
+
+.category {
+  background-size: cover; /* Scale the image to cover the entire div */
+  background-position: center; /* Center the image horizontally and vertically */
+  background-repeat: no-repeat;
+  position: relative; /* Enable stacking of elements within the category */
+  overflow: hidden;
+}
+
+/* Adding a blue overlay */
+.category::before {
+  content: ""; /* Creates a pseudo-element */
+  position: absolute; /* Positions it over the parent */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(35, 35, 37, 0.5); /* Blue overlay with 50% opacity */
+  z-index: 1; /* Ensures it is above the background but behind content */
+}
+
+.category > * {
+  position: relative; /* Keeps the content above the overlay */
+  z-index: 2; /* Places the content above the blue overlay */
+}
+
+
+.consulting {
+  background-image: url("/assets/images/consulting.webp");
+}
+
+.categories {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+.research {
+  background-image: url("/assets/images/research-img.webp");
+}
+
+.categories img {
+  width: 43%;
+}
+.category {
+  padding: 25px;
+  color: white;
+  /* background: #ddd; */
+  border-radius: 5px;
+  transition: transform 0.3s, box-shadow 0.3s;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+.category button {
+  margin-top: 10px;
+  padding: 12px 25px;
+  background: #002244;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+  border-radius: 5px;
+  float: right;
+}
+.category button:hover {
+  background: #0056b3;
+  transform: scale(1.05);
+}
+
+.category:hover {
+  /* transform: scale(1.08); */
+  box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Innovation Section */
+.innovation-sec {
+  padding: 50px 0;
+  background: #cfe8fc;
+}
+.innovation-sec h1 {
+  text-align: center;
+}
+.innovation {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px;
+}
+.innovation-text {
+  line-height: 1.5;
+  display: flex;
+  width: 70%;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.innovation-image img {
+  /* margin-left: 10px; */
+  border-radius: 3px;
+  width: 100%;
+}
+.innovation .btn {
+  margin-top: 10px;
+  margin-right: 10px;
+  padding: 12px 25px;
+  background: #002244;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+  border-radius: 5px;
+}
+.innovation button:hover {
+  background: #0056b3;
+  transform: scale(1.05);
+}
+
+/* Process */
+.process {
+  text-align: center;
+  padding: 70px;
+}
+.process-steps {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+.step {
+  padding: 25px;
+  background: #ddd;
+  border-radius: 10px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.step:hover {
+  transform: scale(1.08);
+}
+
+/* Contact & Subscribe */
+
+.contact button,
+.subscribe button {
+  padding: 12px 25px;
+  background: #002244;
+  width: 30%;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+  border-radius: 5px;
+}
+.contact button:hover,
+.subscribe button:hover {
+  background: #0056b3;
+  transform: scale(1.05);
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .hero,
+  .innovation {
+    flex-direction: column-reverse;
+    align-items: center;
+    /* text-align: center; */
+  }
+  .hero .hero-image {
+    width: 100%;
+  }
+  .contact-subscribe {
+    flex-direction: column;
+  }
+  .categories,
+  .process-steps {
+    flex-wrap: wrap;
+  }
+  .hero-content,
+  .hero img {
+    width: 100%;
+  }
+}

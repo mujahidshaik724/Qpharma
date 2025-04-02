@@ -1,0 +1,65 @@
+.why-choose-us {
+    text-align: center;
+    padding: 40px 20px;
+    /* background-color: #f8f9fa; */
+}
+
+.benefits {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap; /* Allows wrapping for responsiveness */
+}
+
+.benefit {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    flex: 1 1 calc(33.33% - 20px); /* Ensures three items per row with a gap */
+    max-width: 400px; /* Prevents items from being too wide */
+    box-sizing: border-box; /* Includes padding and borders in width calculations */
+}
+
+/* Image inside the benefit card */
+.benefit img {
+    width: 100%; /* Ensure the image takes up the full width of its container */
+    max-width: 300px; /* Standard maximum width for responsiveness */
+    height: auto; /* Maintain aspect ratio for proper scaling */
+    max-height: 200px; /* Standard maximum height */
+    object-fit: contain; /* Ensure the image fits within the container without cropping */
+    margin-bottom: 15px; /* Adds spacing below the image */
+}
+.why-choose-us h1{
+    padding: 20px 0 40px 0;
+}
+
+.benefit h3 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.benefit p {
+    color: #555;
+    line-height: 1.6;
+}
+
+/* Mobile-Friendly Adjustments */
+@media (max-width: 768px) {
+    .benefit {
+        flex: 1 1 calc(50% - 20px); /* Two items per row on tablets */
+        
+    }
+}
+
+@media (max-width: 480px) {
+    .benefit {
+        flex: 1 1 100%; /* Single item per row on small screens */
+       
+    }
+}
