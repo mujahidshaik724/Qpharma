@@ -1,0 +1,57 @@
+[
+    {
+      "title": "GMP Compliance",
+      "description": "In-depth training on Good Manufacturing Practices (GMP) as per global pharma regulations.",
+      "duration": "4 Weeks",
+      "mode": "Online",
+      "startDate": "2025-04-15",
+      "trainer": "Dr. Priya Mehra",
+      "topics": ["GMP Basics", "Documentation", "Validation", "Audit Readiness"]
+    },
+    {
+      "title": "Regulatory Affairs",
+      "description": "Master regulatory submission processes and documentation for FDA, EMA, and more.",
+      "duration": "6 Weeks",
+      "mode": "In-Person",
+      "startDate": "2025-05-01",
+      "trainer": "Mr. Arvind Rao",
+      "topics": ["CTD/eCTD", "Dossier Preparation", "Compliance", "Change Management"]
+    },
+    {
+      "title": "Data Integrity",
+      "description": "In-depth training on Good Manufacturing Practices (GMP) as per global pharma regulations.",
+      "duration": "4 Weeks",
+      "mode": "Online",
+      "startDate": "2025-04-15",
+      "trainer": "Dr. Priya Mehra",
+      "topics": ["GMP Basics", "Documentation", "Validation", "Audit Readiness"]
+    },
+    {
+      "title": "Remidation",
+      "description": "Master regulatory submission processes and documentation for FDA, EMA, and more.",
+      "duration": "6 Weeks",
+      "mode": "In-Person",
+      "startDate": "2025-05-01",
+      "trainer": "Mr. Arvind Rao",
+      "topics": ["CTD/eCTD", "Dossier Preparation", "Compliance", "Change Management"]
+    },
+    {
+      "title": "QMS",
+      "description": "In-depth training on Good Manufacturing Practices (GMP) as per global pharma regulations.",
+      "duration": "4 Weeks",
+      "mode": "Online",
+      "startDate": "2025-04-15",
+      "trainer": "Dr. Priya Mehra",
+      "topics": ["GMP Basics", "Documentation", "Validation", "Audit Readiness"]
+    },
+    {
+      "title": "Pharmaceutical Research",
+      "description": "Master regulatory submission processes and documentation for FDA, EMA, and more.",
+      "duration": "6 Weeks",
+      "mode": "In-Person",
+      "startDate": "2025-05-01",
+      "trainer": "Mr. Arvind Rao",
+      "topics": ["CTD/eCTD", "Dossier Preparation", "Compliance", "Change Management"]
+    }
+  ]
+  

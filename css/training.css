@@ -1,3 +1,160 @@
-.section{
-    height: 100vh;
-}
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    line-height: 1.7;
+  }
+  
+  html,
+  body {
+    overflow-x: hidden;
+    background-color: #f9f9f9;
+  }
+  
+  /* training Banner */
+  .trainingBanner {
+    padding: 50px 30px;
+    gap: 20px;
+    min-height: 200px;
+    background-color: azure; /* Fallback color */
+    background: linear-gradient(to right, #ffffff, #cce4f6, #99c9eb);
+    background-size: cover; /* Ensures the image covers the entire container */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+  }
+  
+  .trainingCardContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .trainingCard {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    padding: 20px;
+    max-width: 45vw;
+    flex: 1 1 300px;
+    /* transition: transform 0.2s ease; */
+    transition: transform 0.3s ease, background 0.3s ease;
+  }
+  .trainingCard:hover {
+    transform: translateY(-5px);
+    background: linear-gradient(135deg, #e0f7fa, #c8e6f9);
+  }
+  .trainingCard button {
+    margin-top: 10px;
+    width: 100px;
+    padding: 7px;
+    background: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  .trainingCard button:hover {
+    background: #01264e;
+  }
+  
+  /* Popup styles */
+  .popup {
+    
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    padding: 20px; /* Add padding for safe spacing */
+    overflow-y: auto; /* This enables vertical scroll if needed */
+  }
+  .popup.hidden {
+    display: none;
+  }
+  
+  .formContent {
+    background: #fff;
+    padding: 25px 30px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 450px;
+    max-height: 90vh; /* Limit height */
+    overflow-y: auto; /* Make inner form scrollable */
+    position: relative;
+  }
+    
+  .close {
+    position: absolute;
+    right: 15px;
+    top: 10px;
+    font-size: 22px;
+    cursor: pointer;
+  }
+  
+  /* Form elements */
+  form label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+  }
+  form input, form select, form textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  form textarea {
+    resize: vertical;
+  }
+  .radiousbtns {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-top: 10px;
+  }
+  .radiousbtns label {
+    margin: 0;
+    font-weight: normal;
+  }
+  .radiousbtns input[type="radio"] {
+    margin-left: 10px;
+    margin-right: 5px;
+    width: auto;
+  }
+  
+
+  form button {
+    margin-top: 15px;
+    padding: 10px 20px;
+    background: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  form button:hover {
+    background: #218838;
+  }
+  
+  /* Responsive layout */
+  @media (max-width: 768px) {
+    .trainingCardContainer {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  

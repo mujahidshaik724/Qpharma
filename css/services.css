@@ -16,7 +16,8 @@ h2 {
   gap: 20px;
   min-height: 200px;
   background-color: azure; /* Fallback color */
-  background: linear-gradient(to right, #ffffff, #cfe8fc);
+  background: linear-gradient(to right, #ffffff, #cce4f6, #99c9eb);
+
   background-size: cover; /* Ensures the image covers the entire container */
   background-position: center; /* Centers the image */
   background-repeat: no-repeat; /* Prevents the image from repeating */

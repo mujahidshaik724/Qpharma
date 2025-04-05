@@ -9,7 +9,7 @@
 html, body {
     width: 100%;
     max-width: 100vw;
-    overflow-x: hidden; /* Prevent horizontal scrolling */
+    overflow-x: hidden;
     font-family: Arial, sans-serif;
     background-color: #f9f9f9;
 }
@@ -19,11 +19,10 @@ html, body {
     padding: 50px 30px;
     gap: 20px;
     min-height: 200px;
-    background-color: azure; /* Fallback color */
-    background: linear-gradient(to right, #ffffff, #cfe8fc);
-    background-size: cover; /* Ensures the image covers the entire container */
-    background-position: center; /* Centers the image */
-    background-repeat: no-repeat; /* Prevents the image from repeating */
+    background: linear-gradient(to right, #ffffff, #cce4f6, #99c9eb);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 /* Form-Details Section */
@@ -31,22 +30,31 @@ html, body {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
-    padding: 20px;
-    justify-content: space-between;
+    padding: 30px 0;
+    justify-content: center;
     max-width: 100%;
 }
 
 .formContainer {
-    flex: 7;
-    padding: 20px;
-    width: 100%;
-    max-width: 600px;
+    flex: 0 0 70%;
+    padding: 25px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    max-width: 70%;
+    min-width: 0;
 }
 
 .formContainer h1 {
     font-size: 24px;
     margin-bottom: 10px;
+    color: #003366;
+}
+
+.form-desc {
     color: #333;
+    margin-bottom: 20px;
+    font-size: 15px;
 }
 
 .contact-form label {
@@ -67,7 +75,7 @@ html, body {
 
 .contact-form button {
     width: 100%;
-    padding: 10px;
+    padding: 12px;
     background-color: #007bff;
     color: white;
     border: none;
@@ -81,29 +89,39 @@ html, body {
     background-color: #0056b3;
 }
 
-/* Contact Details */
 .details {
-    flex: 3;
+    flex: 1;
     display: flex;
     flex-direction: column;
-    gap: 10px;
-    justify-content: space-around;
-    align-items: center;
-    width: 100%;
-    max-width: 400px;
+    gap: 15px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    max-width: 25%;
+    min-width: 0;
+    justify-content: flex-start;
 }
 
 .details .card {
-    width: 100%;
-    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #f5faff;
     padding: 15px;
-    background-color: #f7f7f7;
-    border: 1px solid #ddd;
+    border: 1px solid #dbe9f4;
     border-radius: 8px;
-    text-align: center;
     font-size: 14px;
     font-weight: bold;
-    color: #555;
+    color: #003366;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+    text-align: center;
+    flex: 1;
+}
+.details .card img{
+    height: 35px;
+    width: 50px;
 }
 
 /* Locations Section */
@@ -123,14 +141,14 @@ html, body {
 }
 
 .location {
-    flex: 1;
-    max-width: 280px;
+    flex: 1 1 280px;
     padding: 15px;
     border: 1px solid #ddd;
     border-radius: 8px;
     background-color: #fff;
     text-align: center;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    min-width: 240px;
 }
 
 .location img {
@@ -156,7 +174,7 @@ html, body {
     position: relative;
     width: 100%;
     max-width: 100%;
-    padding-top: 30%; /* Adjust height */
+    padding-top: 30%;
     overflow: hidden;
 }
 
@@ -174,7 +192,6 @@ html, body {
     .form-details-section {
         flex-direction: column;
         align-items: center;
-        text-align: left;
     }
 
     .formContainer, .details {
@@ -204,10 +221,11 @@ html, body {
 
     .details {
         align-items: center;
+        
     }
 
     .details .card {
-        max-width: 100%;
+        width: 100%;
     }
 }
 
@@ -218,6 +236,9 @@ html, body {
 
     .formContainer, .details {
         padding: 15px;
+    }
+    .details .card{
+        width: 100%;
     }
 
     .locations-container {
